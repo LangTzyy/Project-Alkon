@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Capaian Program KB</title>
+
+  <link rel="icon" type="image/png" href="assets/img/Logo_BkkbN.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Vampiro+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="logo-block">
+        <div class="logo-group">
+          <img src="../assets/img/Logo_BkkbN.png" alt="Logo BKKBN" />
+          <div class="logo-text">
+            <p class="keluarga">Keluarga</p>
+            <p class="berencana">BERENCANA</p>
+          </div>
+        </div>
+        <p class="tagline">Sistem Informasi Pemesanan Alkon</p>
+      </div>
+      <nav>
+        <a href="dashboard.html" class="active"><i class="fas fa-th-large"></i><span>Dashboard</span></a>
+        <a href="pemesanan.html"><i class="fas fa-shopping-cart"></i><span>Pemesanan</span></a>
+        <a href="stok-alkon.html"><i class="fas fa-cubes"></i><span>Stok Alkon</span></a>
+        <a href="riwayat.html"><i class="fas fa-history"></i><span>Riwayat</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span>Account</span></a>
+      </nav>
+    </aside>
+
+    <main class="fade-up">
+      <div class="page-title">Dashboard Capaian Program KB</div>
+      <section class="stats-container">
+        <div class="card blue"><div class="card-header"><i class="fas fa-box"></i><span>Jumlah Stok Alkon</span></div><div class="number">1.200</div></div>
+        <div class="card teal"><div class="card-header"><i class="fas fa-file-medical"></i><span>Jumlah Mitra KB</span></div><div class="number">74</div></div>
+        <div class="card orange"><div class="card-header"><i class="fas fa-user"></i><span>Jumlah Akseptor Baru</span></div><div class="number"></div></div>
+        <div class="card purple"><div class="card-header"><i class="fas fa-list"></i><span>Total Pemesanan</span></div><div class="number"></div></div>
+      </section>
+      <section class="chart-container">
+        <h2>Jumlah Pemesanan Per Bulan</h2>
+        <canvas id="barChart"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

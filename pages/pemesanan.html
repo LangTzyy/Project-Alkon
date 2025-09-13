@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Pemesanan Alat Kontrasepsi</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/Logo_BkkbN.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Vampiro+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body class="pemesanan-page">
+  <div class="container">
+    <!-- Sidebar -->
+    <aside>
+      <div class="logo-block">
+        <div class="logo-group">
+          <img src="../assets/img/Logo_BkkbN.png" alt="Logo BKKBN" />
+          <div class="logo-text">
+            <p class="keluarga">Keluarga</p>
+            <p class="berencana">BERENCANA</p>
+          </div>
+        </div>
+        <p class="tagline">Sistem Informasi Pemesanan Alkon</p>
+      </div>
+      <nav>
+        <a href="dashboard.html"><i class="fas fa-th-large"></i><span>Dashboard</span></a>
+        <a href="pemesanan.html" class="active"><i class="fas fa-shopping-cart"></i><span>Pemesanan</span></a>
+        <a href="stok-alkon.html"><i class="fas fa-cubes"></i><span>Stok Alkon</span></a>
+        <a href="riwayat.html"><i class="fas fa-history"></i><span>Riwayat</span></a>
+        <a href="account.html"><i class="fas fa-user"></i><span>Account</span></a>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main fade-up">
+      <h1>Form Pemesanan Alat Kontrasepsi</h1>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <span class="tab active" data-target="pesan">Pesan</span>
+        <span class="tab" data-target="cek">Cek Pemesanan</span>
+      </div>
+
+      <!-- Pesan -->
+      <div id="pesan" class="form-container tab-content">
+        <div class="pesan-container">
+          <label for="jenisAlat">Jenis Alat Kontrasepsi</label>
+          <select id="jenisAlat">
+            <option>Pilih Jenis Alat</option>
+          </select>
+
+          <label for="jumlahPesan">Jumlah Pesanan</label>
+          <input type="number" id="jumlahPesan" placeholder="Masukkan jumlah">
+
+          <button type="button" class="bnt-keranjang">Masukkan Keranjang</button>
+
+          <h3>Keranjang Pesanan</h3>
+          <table class="pesan-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Alat Kontrasepsi</th>
+                <th>Jumlah</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button type="button">Kirim Pesanan</button>
+        </div>
+      </div>
+
+      <!-- Cek Pemesanan -->
+      <div id="cek" class="form-container tab-content" style="display:none;">
+        <div class="cek-container">
+          <table class="cek-table">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Jenis Kontrasepsi</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>05-08-2025</td>
+                <td>
+                  <ul class="item-list">
+                    <li>Pil KB : 100 Box</li>
+                    <li>Suntik KB : 50 Vial</li>
+                  </ul>
+                </td>
+                <td><span class="status disetujui">Disetujui</span></td>
+                <td class="text-center">
+                  <i class="fas fa-file-alt" style="color:#007bff; font-size:45px;"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>07-07-2025</td>
+                <td>
+                  <ul class="item-list">
+                    <li>Kondom : 500 pcs</li>
+                    <li>IUD : 200 Unit</li>
+                  </ul>
+                </td>
+                <td><span class="status diproses">Diproses</span></td>
+                <td><button class="lihat-btn">Lihat</button></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>05-07-2025</td>
+                <td>
+                  <ul class="item-list">
+                    <li>Implant : 15 batang</li>
+                  </ul>
+                </td>
+                <td><span class="status ditolak">Ditolak</span></td>
+                <td><button class="lihat-btn">Lihat</button></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>02-06-2025</td>
+                <td>
+                  <ul class="item-list">
+                    <li>Pil KB : 100 Box</li>
+                    <li>IUD : 100 Unit</li>
+                  </ul>
+                </td>
+                <td><span class="status selesai">Selesai</span></td>
+                <td><button class="lihat-btn">Lihat</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
