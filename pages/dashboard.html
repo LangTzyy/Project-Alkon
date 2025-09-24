@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Capaian Program KB</title>
+
+  <link rel="icon" type="image/png" href="assets/img/Logo_BkkbN.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Vampiro+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="sidebar-container"></div>
+
+    <main class="fade-up">
+      <div class="page-title">Dashboard Capaian Program KB</div>
+      <section class="stats-container">
+        <div class="card blue"><div class="card-header"><i class="fas fa-box"></i><span>Jumlah Stok Alkon</span></div><div class="number">1.200</div></div>
+        <div class="card teal"><div class="card-header"><i class="fas fa-file-medical"></i><span>Jumlah Mitra KB</span></div><div class="number">74</div></div>
+        <div class="card orange"><div class="card-header"><i class="fas fa-user"></i><span>Jumlah Akseptor Baru</span></div><div class="number"></div></div>
+        <div class="card purple"><div class="card-header"><i class="fas fa-list"></i><span>Total Pemesanan</span></div><div class="number"></div></div>
+      </section>
+      <section class="chart-container">
+        <h2>Jumlah Pemesanan Per Bulan</h2>
+        <canvas id="barChart"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/script.js"></script>
+   <script>
+    // load dashboard.html ke dalam div
+    fetch("../sidebar.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("dashboard-container").innerHTML = html;
+      })
+      .catch(err => console.error("Gagal load dashboard:", err));
+  </script>
+</body>
+</html>

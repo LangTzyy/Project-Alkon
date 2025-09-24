@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign In</title>
+
+  <link rel="icon" type="image/png" href="assets/img/Logo_BkkbN.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Vampiro+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="container fade-up">
+    <div class="left">
+      <img src="assets/img/Logo_BkkbN.png" alt="BkkbN logo" />
+      <p class="tagline">Sistem Informasi Pemesanan Alkon</p>
+      <div class="text-group">
+        <p class="keluarga">keluarga</p>
+        <p class="berencana">BERENCANA</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-header">
+        <h1>Sign In</h1>
+        <p>Sign in to your account</p>
+      </div>
+      <form id="loginForm" autocomplete="off" novalidate>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" value="rsudgenteng@banyuwangikab.go.id" placeholder="Enter your email" />
+
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" name="password" value="12345678" placeholder="Enter your password" />
+          <button type="button" id="togglePassword"><i class="fa-solid fa-eye"></i></button>
+        </div>
+
+        <a href="#" class="forgot">Forgot Password?</a>
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
